@@ -13,6 +13,10 @@ class Dog
   end
 
   def feed
+    if hungry?
     @hunger_level = 0
+    else
+      "Thanks, not hungy bro!"
+    end
   end
 end
