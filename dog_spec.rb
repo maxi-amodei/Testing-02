@@ -11,6 +11,14 @@ RSpec.describe Dog do
     end
   end
 
+  describe "#feed" do
+  subject { Dog.new(hunger_level: 3) }
+    it "eliminates hunger from dog"do
+    subject.feed
+    expect(subject).to_not be_hungry
+    end
+  end
+
   describe "#hungry?" do
     context "when hunger level is more than 5" do
       subject { Dog.new(hunger_level: 7) }
