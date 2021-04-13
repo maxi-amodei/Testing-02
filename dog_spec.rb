@@ -19,7 +19,7 @@ RSpec.describe Dog do
       end
     end
     context "when hungry level is less or equal to 5" do
-      subject { Dog.new(hunger_level: 5) }
+      subject { described_class.new(hunger_level: 5) }
       it "returns false" do
         # hungry_dog = described_class.new(hunger_level: 5)
   
