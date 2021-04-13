@@ -15,7 +15,7 @@ describe Dog do
     it "returns true if hungry level is more than 5" do
       hungry_dog = Dog.new(hunger_level: 7)
 
-      expect(hungry_dog.hungry?).to eq(true)
+      expect(hungry_dog).to be_hungry
     end
     it "returns false if hungry level is less or equal to 5" do
       hungry_dog = Dog.new(hunger_level: 5)
